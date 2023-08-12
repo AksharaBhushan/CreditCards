@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/layout.css" />
+  </head>
+
+  <body>
+    <!--- Header Section -->
+    <div id="headerWrapper">
+      <h1 id="headerTitle">CreditVue: Card Selector & Risk Anaylser</h1>
+
+      <a id="googleButton" href="http://localhost:8502/" target="_blank">Credit Risk</a>
+    </div>
+
+
+
+    <!--- Previous Cards -->
+    <h2>Which Cards do you own?</h2>
+    <div class="containerDiv">
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Chase_Freedom_Flex_Checkbox"/>
+          Axis Bank Ace Credit Card
+        </label>
+        <img
+            class="image"
+            src="https://www.paisabazaar.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/01/axis-bank-ace-credit-card-1-350x225.jpg.webp"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Chase_Freedom_Unlimited_Checkbox"/>
+          HDFC Bank Millennia
+        </label>
+        <img
+            class="image"
+            src="https://www.paisabazaar.com/wp-content/uploads/2022/06/HDFC-Bank-Millennia-Credit-Card.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Chase_Sapphire_Preferred_Checkbox"/>
+          Amazon Pay ICICI
+        </label>
+        <img
+            class="image"
+            src="https://www.paisabazaar.com/wp-content/uploads/2022/09/Amazon-Pay-Credit-Card-Offer.jpg"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Citi_Custom_Cash_Checkbox"/>
+          SBI Elite
+        </label>
+        <img
+            class="image"
+            src="https://www.paisabazaar.com/wp-content/uploads/2021/12/SBI-Elite-Credit-Card-newwwwwww.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Citi_Double_Cash_Checkbox"/>
+          American Express SmartEarn
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2021/07/American-Express-SmartEarn-Credit-Card.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Wells_Fargo_Active_Cash_Checkbox"/>
+          Flipkart Axis Bank
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2021/08/flipkart-axis-bank-credit-card.png.webp"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "American_Express_Blue_Cash_Preferred_Checkbox"/>
+          Bank of Baroda
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2021/07/bank-of-baroda-eterna-credit-card-2.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "American_Express_Blue_Cash_Everyday_Checkbox"/>
+          ICICI Emeralde
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2021/07/ICICI-Emeralde-Credit-Card.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Bank_of_America_Customized_Cash_Checkbox"/>
+          IDFC HPCL First Power Plus
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2023/04/IDFC-Bank-First-Power-Plus-Post.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Discover_It_Cash_Back_Checkbox"/>
+           Discover It Caschback
+        </label>
+        <img
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Fdiscover_it_cash_back_2.jpg?v=1634272111484"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Capital_One_SavorOne_Rewards_Checkbox"/>
+          Capital One SavorOne Rewards
+        </label>
+        <img
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Fsavor_one.webp?v=1634273542563"
+        />
+      </div>
+      <div class="CheckboxEntry" >
+        <label>
+          <input type="checkbox" id = "Capital_One_Quicksilver_Rewards_Checkbox"/>
+          BPCL SBI
+        </label>
+        <img
+            class="image"
+            src="https://cardinsider.com/wp-content/uploads/2021/07/BPCL-SBI-Card.png"
+        />
+      </div>
+      <div class="CheckboxEntry">
+        <label>
+          <input type="checkbox" id = "Capital_One_QuicksilverOne_Rewards_Checkbox"/>
+          Capital One QuicksilverOne Rewards
+        </label>
+        <img
+            class="image"
+             src="https://ecm.capitalone.com/WCM/card/products/quicksilver-card-art.png"
+        />
+      </div>
+      
+    </div>
+    <!--- Expenditures in the first couple of months Section -->
+    <h2>
+      What do you expect to put on the card in the first Three/Six Months?
+    </h2>
+
+    <div class="containerDiv">
+      <div class="Entry">
+        <p class="EntryWords">First Three Months Card Expenditures:</p>
+        <input
+          class="EntryInput"
+          name="three_months"
+          id="three_expenditure"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">First Six Months Card Expenditures:</p>
+        <input
+          class="EntryInput"
+          name="six_months"
+          id="six_expenditure"
+          value="0"
+        />
+      </div>
+    </div>
+    <!--- Expenses Section -->
+    <h2>How much do you spend in the following categories per year?</h2>
+
+    <div class="containerDiv">
+      <div class="Entry">
+        <p class="EntryWords">BigBazar</p>
+        <input
+          name="target"
+          id="target_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">D-mart</p>
+        <input
+          name="walmart"
+          id="walmart_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Amazon:</p>
+        <input
+          name="amazon"
+          id="amazon_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Flipkart:</p>
+        <input
+          name="costco"
+          id="costco_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Online Grocery :</p>
+        <input
+          name="online_grocery"
+          id="online_grocery_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">In Person Grocery :</p>
+        <input
+          name="in_person_grocery"
+          id="in_person_grocery_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Travel :</p>
+        <input
+          name="travel"
+          id="travel_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Dining:</p>
+        <input
+          name="dining"
+          id="dining_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Hotels:</p>
+        <input
+          name="hotel"
+          id="hotel_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Transit :</p>
+        <input
+          name="transit"
+          id="transit_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Medicinestores:</p>
+        <input
+          name="drugstores"
+          id="drugstores_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Petrol:</p>
+        <input
+          name="gas"
+          id="gas_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">House Rent:</p>
+        <input
+          name="home_improvement"
+          id="home_improvement_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Gym:</p>
+        <input
+          name="fitness_clubs"
+          id="fitness_clubs_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Live Entertainment:</p>
+        <input
+          name="live_entertainment"
+          id="live_entertainment_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Miscellaneous :</p>
+        <input
+          name="vivid_seats"
+          id="vivid_seats_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Department Stores:</p>
+        <input
+          name="department_stores"
+          id="department_stores_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Online Shopping </p>
+        <input
+          name="online_shopping"
+          id="online_shopping_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Streaming:</p>
+        <input
+          name="streaming"
+          id="streaming_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <div class="Entry">
+        <p class="EntryWords">Other:</p>
+        <input
+          name="other"
+          id="other_entry"
+          class="EntryInput"
+          type="number"
+          value="0"
+        />
+      </div>
+      <!-- Fake Entry to allow for appropraite spacing in 1, 2, or 3 columns -->
+      <div class="Entry" id="fake_spacer"></div>
+    </div>
+
+    <div id="recommendDiv">
+      <h2>Best Cards for Cash Back:</h2>
+      <div class="containerDiv recommendDivWrapper">
+        <div id="card1" class="creditNoRotate">
+          <img
+            id="card1_img"
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Fdiscover_it_cash_back_2.jpg?v=1634272111484"
+          />
+
+          <div class="creditNoRotate_words">
+            <p id="card1_link" class="link">
+              <a
+                id="card1_link_value"
+                href="https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+              >
+                Learn More Here!
+              </a>
+            </p>
+            <p id="card1_cash_back" class="cashBack">
+              Cash Back: Rs. <span id="card1_cash_back_value"> </span>
+            </p>
+            <p id="card1_bonus" class="bonus">
+              Bonus: Rs. <span id="card1_bonus_value"> </span>
+            </p>
+            <p id="card1_annual_fee" class="annualFee">
+              Annual Fee: Rs. <span id="card1_annual_fee_value"></span>
+            </p>
+            <p id="card1_rotate" class="rotate">
+              Rotating Categories: <span id="card1_rotate_value">False</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="card2" class="creditNoRotate">
+          <img
+            id="card2_img"
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Ffreedom_flex_card.png?v=1634271031890"
+          />
+
+          <div class="creditNoRotate_words">
+            <p id="card2_link" class="link">
+              <a
+                id="card2_link_value"
+                href="https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+              >
+                Learn More Here!
+              </a>
+            </p>
+            <p id="card2_cash_back" class="cashBack">
+              Cash Back: Rs. <span id="card2_cash_back_value"> </span>
+            </p>
+            <p id="card2_bonus" class="bonus">
+              Bonus: Rs. <span id="card2_bonus_value"> </span>
+            </p>
+            <p id="card2_annual_fee" class="annualFee">
+              Annual Fee: Rs. <span id="card2_annual_fee_value"></span>
+            </p>
+            <p id="card2_rotate" class="rotate">
+              Rotating Categories: <span id="card2_rotate_value">False</span>
+            </p>
+          </div>
+        </div>
+
+        <div id="card3" class="creditNoRotate">
+          <img
+            id="card3_img"
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Fchase_sapphire_preferred.jpg?v=1634271047510"
+          />
+
+          <div class="creditNoRotate_words">
+            <p id="card3_link" class="link">
+              <a
+                id="card3_link_value"
+                href="https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+              >
+                Learn More Here!
+              </a>
+            </p>
+            <p id="card3_cash_back" class="cashBack">
+              Cash Back: Rs. <span id="card3_cash_back_value"> </span>
+            </p>
+            <p id="card3_bonus" class="bonus">
+              Bonus: Rs. <span id="card3_bonus_value"> </span>
+            </p>
+            <p id="card3_annual_fee" class="annualFee">
+              Annual Fee: Rs. <span id="card3_annual_fee_value"></span>
+            </p>
+            <p id="card3_rotate" class="rotate">
+              Rotating Categories: <span id="card3_rotate_value">False</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Best Card with Rotating Categories:</h2>
+      <div class="containerDiv recommendDivWrapper">
+        <div id="card4" class="creditNoRotate">
+          <img
+            id="card4_img"
+            class="image"
+            src="https://cdn.glitch.me/f44dbca5-f65a-437e-8ecc-759bafee8c61%2Fblue-cash-preferred.webp?v=1634271590749"
+          />
+
+          <div class="creditNoRotate_words">
+            <p id="card4_link" class="link">
+              <a
+                id="card4_link_value"
+                href="https://creditcards.chase.com/cash-back-credit-cards/freedom/unlimited"
+              >
+                Learn More Here!
+              </a>
+            </p>
+            <p id="card4_cash_back" class="cashBack">
+              Cash Back: Rs. <span id="card4_cash_back_value"> </span>
+            </p>
+            <p id="card4_bonus" class="bonus">
+              Bonus: Rs. <span id="card4_bonus_value"> </span>
+            </p>
+            <p id="card4_annual_fee" class="annualFee">
+              Annual Fee: Rs. <span id="card4_annual_fee_value"></span>
+            </p>
+            <p id="card4_rotate" class="rotate">
+              Rotating Categories: <span id="card4_rotate_value">False</span>
+            </p>
+            <p id="card4_rotate_categories" class="rotate_categories">
+              Rotating Categories:
+              <span id="card4_rotate_categories_value">False</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- Recommend Button Section -->
+    <div class="buttonDiv">
+      <button id="compute_button">Recommend Cards</button>
+    </div>
+
+    <script src="./js/card-data.js" type="module"></script>
+    <script src="./js/credit-card.js" type="module"></script>
+    <script src="./js/compare-button.js" type="module"></script>
+    <script src="./tests/test-data.js" type="module"></script>
+    <script src="./tests/tests.js" type="module"></script>
+  </body>
+</html>
